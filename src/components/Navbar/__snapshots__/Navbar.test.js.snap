@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar matches snapshot 1`] = `
+<div
+  className="Navbar"
+>
+  <button
+    className="MenuButton"
+  >
+    노래
+  </button>
+  <button
+    className="MenuButton"
+  >
+    폭죽
+  </button>
+  <button
+    className="MenuButton"
+  >
+    박수
+  </button>
+</div>
+`;
