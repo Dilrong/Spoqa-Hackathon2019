@@ -8,8 +8,9 @@
 
     .img-cake{
         position: absolute;
+        width: 450px;
         z-index: 2;
-        top: 300px;
+        top: 360px;
         bottom: 0;
         left: 0;
         right: 0;
@@ -19,7 +20,7 @@
     .img-fire1{
         position: absolute;
         z-index: 3;
-        top: 20px;
+        top: -20px;
         bottom: 0;
         left: 0;
         right: 0;
@@ -30,10 +31,10 @@
     .img-fire2{
         position: absolute;
         z-index: 3;
-        top: 20px;
+        top: -20px;
         bottom: 0;
         left: 0;
-        right: 80px;
+        right: 118px;
         margin: auto;
         width: 40px;
         height: 60px;
@@ -41,13 +42,41 @@
     .img-fire3{
         position: absolute;
         z-index: 3;
-        top: 20px;
+        top: -20px;
         bottom: 0;
-        left: 80px;
+        left: 118px;
         right: 0;
         margin: auto;
         width: 40px;
         height: 60px;
+    }
+
+    .img-applause{
+        position: absolute;
+        z-index: 4;
+        top: -120px;
+        bottom: 0;
+        left: 0px;
+        right: 0;
+        margin: auto;
+    }
+    @keyframes img-applause {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+    .img-firework{
+        position: absolute;
+        z-index: 4;
+        top: -120px;
+        bottom: 0;
+        left: 0px;
+        right: 0;
+        margin: auto;
     }
 
     .sound-wave{

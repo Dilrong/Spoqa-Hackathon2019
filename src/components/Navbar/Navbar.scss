@@ -1,18 +1,22 @@
 .Navbar{
+    position: absolute;
+    right: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .Navbar__Button{
-    width: 76px;
-    height: 76px;
-    font-size: 24px;
+    width: 168px;
+    height: 168px;
+    border: 5px solid white; 
+    margin-bottom: 20px;
     text-decoration: none;
     outline: none;
-    border: none;
     border-radius: 100px;
+    align-items: center;
+    justify-content: center;
     color: white;
     background-color: #4c80f1;
 }

@@ -11,7 +11,7 @@ class Cake extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            isWind : false
+            isWind : false,
         };
     }
 
@@ -69,6 +69,8 @@ class Cake extends Component{
                 {this.state.isWind? (<div/>):(<img className="img-fire1" alt="fire" src="/images/fire.gif"/>)}
                 {this.state.isWind? (<div/>):(<img className="img-fire2" alt="fire" src="/images/fire.gif"/>)}
                 {this.state.isWind? (<div/>):(<img className="img-fire3" alt="fire" src="/images/fire.gif"/>)}
+                {this.props.store.prototype.isApplause? (<img className="img-applause" alt="applause" src="/images/applause.gif"/>):(<div/>)}
+                {this.props.store.prototype.isFirework? (<img className="img-firework" alt="firework" src="/images/firework.gif"/>):(<div/>)}
                 <img className="img-cake" alt="cake" src="/images/cake.png" onClick={()=>{
                     if(this.state.isWind === true){
                         this.setState({isWind:false})
@@ -79,7 +81,7 @@ class Cake extends Component{
                 <Header/>
                 <Webcam
                     audio={false}
-                    height={655}
+                    height={700}
                     ref={this.setRef}
                     screenshotFormat="image/jpeg"
                     width={'100%'}
@@ -95,14 +97,17 @@ class Cake extends Component{
                     backgroundColor="#ffffff" />
                 <div className="Navbar">
                 <button className="Navbar__Button" onClick={() => {
-                    song.play()}}>🎹</button>
+                    song.play()}}><img alt="song" src="/images/song.png"/></button>
                 <button className="Navbar__Button" onClick={() => {
                     this.props.store.prototype.isFirework=true; 
                     firework.play();
                     setTimeout(()=>{this.props.store.prototype.isFirework=false}, 4150);
-                    }}>🎉</button>
-                <button className="Navbar__Button" onClick={() => 
-                    {this.onApplause()}}>👏</button>
+                    }}><img alt="song" src="/images/firework.png"/></button>
+                <button className="Navbar__Button" onClick={() => {
+                    this.props.store.prototype.isApplause=true; 
+                    this.onApplause()
+                    setTimeout(()=>{this.props.store.prototype.isApplause=false}, 2000);
+                    }}><img alt="song" src="/images/applause.png"/></button>
                 </div>
                 <Copyright text="Spoqa Hackathon. ㅁㅆㅁㅌ"/>
             </div>
