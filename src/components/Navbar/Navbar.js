@@ -1,12 +1,15 @@
 import React from 'react';
-import { MenuButton } from '../index';
 import './Navbar.scss';
 
-const Navbar = ({history}) => (
+const song = new Audio("/audios/birtdaySound.mp3");
+const firework = new Audio("/audios/firework.mp3");
+const applause = new Audio("/audios/applause.mp3");
+
+const Navbar = () => (
     <div className="Navbar">
-        <MenuButton text="케이크"/>
-        <MenuButton text="폭죽"/>
-        <MenuButton text="박수"/>
+        <button className="Navbar__Button" onClick={() => {song.play()}}>🎹</button>
+        <button className="Navbar__Button" onClick={() => {firework.play()}}>🎉</button>
+        <button className="Navbar__Button" onClick={() => {applause.play()}}>👏</button>
     </div>
 )
 

@@ -1,7 +1,11 @@
 import Navbar from './Navbar/Navbar';
-import MenuButton from './MenuButton/MenuButton';
+import Header from './Header/Header';
+import Firework from './Firework/Firework';
+import Copyright from './Copyright/Copyright';
 
 export {
     Navbar,
-    MenuButton
+    Header,
+    Firework,
+    Copyright
 }
