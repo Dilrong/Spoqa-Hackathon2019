@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Party Party
+Party Party는 가상으로 자신의 생일을 축하해주는 프로그램입니다.
+2019 스포카 무쓸모톤에서 진행한 작품으로 무쓸모한 프로젝트를 주제로 진행하였습니다.
+## Getting Start
+```
+npm install
+npm start
+```
+Create-React-App 기반으로 제작되었습니다.
+자세한 dependencies, scripts는 package.json을 참고해주시면 됩니다.
+## File Structure
+```
+public
+ - image
+ - audios
+  - favicon.ico
+  - index.html
+  - manifest.json
+src
+ - components
+ - pages
+ - stores
+ - App.js
+ - App.scss
+ - index.js
+ - index.scss
+ - serviceWorker.js
+```
+### public
+배포에 필요한 파일을 불러오기 위한 폴더입니다.
+### components
+component를 담고 있는 폴더로 index.js를 이용하여 import를 관리합니다.
+- Copyright
+- Firework : 폭죽효과를 위한 컴포넌트입니다.
+- Header
+- Navbar : 메뉴바로 컴포넌트 state문제로 사용하지 않습니다.
+### page
+뷰페이지와 로직을 관리하는 폴더로 index.js를 이용하여 import를 관리합니다. 
+- Cake : 메인페이지입니다.
+## Function
+- `onTakePhoto()` : react-webcam, 사진을 캡쳐를 위함
+- `onData()` : react-mic, 마이크에 들어오는 음성을 받기 위함
+- `onStop()` : react-mic, 마이크 정지
+- `onApplause()` : 박수 효과
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Version History
+| Date  | Version | author |
+| ------------- | ------------- | ------------- |
+| 2019.05.19   | v1.0.0 | 이학성 |
