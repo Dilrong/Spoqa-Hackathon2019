@@ -5,6 +5,8 @@
     justify-content: center;
     justify-items: center;
     text-align: center;
+    background: rgba(10, 10, 10, 0.1);
+    z-index: 0;
 
     .img-cake{
         position: absolute;
@@ -81,5 +83,24 @@
 
     .sound-wave{
         display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .CakePage{
+        .img-cake{
+            width: 300px;
+        }
+        .img-fire1{
+            top: 80px;
+        }
+        .img-fire2{
+            top: 80px;
+            left: 40px;
+        }
+        .img-fire3{
+            top: 80px;
+            right: 40px;
+        }
     }
 }

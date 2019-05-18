@@ -12,20 +12,22 @@ class Cake extends Component{
         super(props);
         this.state = {
             isWind : false,
+            count: 0
         };
     }
 
-    onTakePhoto (dataUri) {
-        // Do stuff with the photo...
-        console.log('takePhoto');
-    }
+    capture = () => {
+        const imageSrc = this.webcam.getScreenshot();
+    };
 
     onData = (recordedBlob) => {
         console.log('chunk of real-time data is: ', recordedBlob.size);
-        if(recordedBlob.size >= 3000){
-            this.setState({isWind: true})
+        if(recordedBlob.size >= 969){
+            this.setState({count: this.state.count+1})
+            if(this.state.count === 10)
+                this.setState({isWind: true})
         }else{
-            this.setState({isWind: false})
+            this.setState({count: 0})
         }
     }
     

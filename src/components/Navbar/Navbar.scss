@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #4c80f1;
+    background: rgba(10, 10, 10, 0.1);
 }
 
 .Navbar__Button:hover{
@@ -27,4 +27,16 @@
 
 .Navbar__Button:active{
     background-color: #2c5ae9;
+}
+
+@media screen and (max-width:768px) {
+    .Navbar{
+        position: static;
+        flex-direction: row;
+    }
+    .Navbar__Button{
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+    }
 }
