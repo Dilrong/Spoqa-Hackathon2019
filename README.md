@@ -1,5 +1,6 @@
 # Party Party
 Party Party는 가상으로 자신의 생일을 축하해주는 프로그램입니다.
+
 2019 스포카 무쓸모톤에서 진행한 작품으로 무쓸모한 프로젝트를 주제로 진행하였습니다.
 ## Getting Start
 ```
@@ -7,6 +8,9 @@ npm install
 npm start
 ```
 Create-React-App 기반으로 제작되었습니다.
+
+크게 사용하고 있는 라이브러리는 MobX, react-mic, react-webcam 입니다.
+
 자세한 dependencies, scripts는 package.json을 참고해주시면 됩니다.
 ## File Structure
 ```
